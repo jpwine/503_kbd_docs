@@ -4,7 +4,7 @@
 v=1
 
 # 共通
-kbname=bbl46
+declare -x  kbname=bbl46
 
 # 使用製品の型番
 

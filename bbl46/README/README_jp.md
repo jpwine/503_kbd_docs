@@ -1,1 +1,3 @@
-README_jp_template.md
+# はじめに
+
+bbl46について以下を公開します。
