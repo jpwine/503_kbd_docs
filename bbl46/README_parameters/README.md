@@ -1,0 +1,1 @@
+README_jp_template.md
