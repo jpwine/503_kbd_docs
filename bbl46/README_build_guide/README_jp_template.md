@@ -63,41 +63,24 @@
 パーツをなくしてしまった場合は補修パーツの購入ページを設けますので、  
 購入ショップかTwitterでご連絡ください。
 
-* 筐体部品
-
-    | 品名 | 数量 |
-    |  :-  |  -:  |
-    | $caseu_nn | 1 |
-    | $cased_nn | 1 |
-    | $ssw1_nn  | 1 |
-    | $ssw2_nn  | 1 |
-    | $ps1_nn   | 4 |
-    | $ps2_nn   | 4 |
-    | $pl1_nn   | 6 |
-    | $pl2_nn   | 6 |
-    | $poronu_nn  | 10 |
-    | $porond_nn  | 20 |
-    | $case_rivet_nn  | 6 |
-    | $rubber_foot_nn | 4 |
-* 電子部品
-
-    | 品名 | 数量 |
-    |  :-  |  -:  |
-    | $pcb_nn  | 1 |
-    | $plate_nn  | 1 |
-    | $sw_socket_nn  | 46 |
-    | $diode_nn  | 46 |
-    | $daughter_board_nn  | 1 |
-    | $daughter_board_rivet_nn  | 4 |
-    | $jst_wire_nn  | 1 |
-    | $usb_b_con_nn  | 1 |
-    | $usb_c_con_nn  | 1 |
-    | $pin_socket_nn  | 2 |
-    | $pin_header_nn  | 2 |
-    | $reset_sw_nn  | 1 |
-    | $spacer_nn  | 5 |
-    | $scr_smallf_nn  | 5 |
-    | $scr_smallb_nn  | 5 |
+| 筐体部品 | 数量 | | 電子部品 | 数量 |
+|  :-  |  -:  |-|  :-  |  -:  |
+| $caseu_nn | 1 | | $pcb_nn  | 1 |
+| $cased_nn | 1 | | $plate_nn  | 1 |
+| $ssw1_nn  | 1 | | $sw_socket_nn  | 46 |
+| $ssw2_nn  | 1 | | $diode_nn  | 46 |
+| $ps1_nn   | 4 | | $daughter_board_nn  | 1 |
+| $ps2_nn   | 4 | | $jst_wire_nn  | 1 |
+| $pl1_nn   | 6 | | $usb_b_con_nn  | 1 |
+| $pl2_nn   | 6 | | $usb_c_con_nn  | 1 |
+| $poronu_nn  | 10 | | $pin_socket_nn  | 2 |
+| $porond_nn  | 20 | | $pin_header_nn  | 2 |
+| $case_rivet_nn  | 6 | | $reset_sw_nn  | 1 |
+| $daughter_board_rivet_nn  | 4 |
+| $rubber_foot_nn | 4 |
+| $spacer_nn  | 5 |
+| $scr_smallf_nn  | 5 |
+| $scr_smallb_nn  | 5 |
 
 ※ 付属品の外観は[パーツリスト(未作成)](../README_parts/README_${_lang}.md)を参照してください
 
