@@ -133,45 +133,94 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 2つ目が終わるとほぼ終わっています。  
 <!--作者向けに作業を配信してくださると、作者が作業動画としてありがたがり、新作が進捗します。-->
 
-#### $diode_nn (1/6)
+#### $diode_nn (1/5)
 
 1. 1つ目の $diode_nn を基板にはんだ付けする
-    1. 予備はんだを盛る
+    1. 部品を載せる前に、2つあるスペースの片側に予備はんだを盛る
+        * はんだごてを持つ手側に盛るとよいです
     1. $diode_nn の片足を予備はんだと接合する
-    1. $diode_nn と基板の密着度を確認する
+    1. $diode_nn が基板から浮いていないことを確認する
     1. $diode_nn の未接合の足をはんだ付けする
+    1. $diode_nn が基板から浮いていないことを確認する
 
 1. 残る45個の $diode_nn を基板にはんだ付けする
-    1. 予備はんだを盛る
+    1. 部品を載せる前に、2つあるスペースの片側に予備はんだを盛る
     1. $diode_nn の片足を予備はんだと接合する
-    1. $diode_nn と基板の密着度を確認する
+    1. $diode_nn が基板から浮いていないことを確認する
     1. $diode_nn の未接合の足をはんだ付けする
+    1. $diode_nn が基板から浮いていないことを確認する
 
 
 
-#### $sw_socket_nn (2/6)
+#### $sw_socket_nn (2/5)
 
 1. 1つ目の $sw_socket_nn を基板にはんだ付けする
-    1. 予備はんだを盛る
+    1. 部品を載せる前に、2つあるスペースの片側に予備はんだを盛る
     1. $sw_socket_nn の片足を予備はんだと接合する
-    1. $sw_socket_nn と基板の密着度を確認する
+    1. $sw_socket_nn が基板から浮いていないことを確認する
     1. $sw_socket_nn の未接合の足をはんだ付けする
+    1. $sw_socket_nn が基板から浮いていないことを確認する
 
 1. 残る45個の $sw_socket_nn を基板にはんだ付けする
-    1. 予備はんだを盛る
+    1. 部品を載せる前に、2つあるスペースの片側に予備はんだを盛る
     1. $sw_socket_nn の片足を予備はんだと接合する
-    1. $sw_socket_nn と基板の密着度を確認する
+    1. $sw_socket_nn が基板から浮いていないことを確認する
     1. $sw_socket_nn の未接合の足をはんだ付けする
+    1. $sw_socket_nn が基板から浮いていないことを確認する
 
-#### $pin_socket_nn (3/6)
+#### $pin_socket_nn と $pin_header_nn (3/5)
 
-#### $pin_header_nn (4/6)
+1. 下準備
+    1. $pin_socket_nn を基板にのせる x2  
+       ※ $pin_socket_nn をのせる面は ダイオード と同じです
+    1. $pin_header_nn を1pin分カットし、12pinにする x2  
+       ※ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合はカットせずに [BMP (未作成)](../) を参照してください
+    1. $pin_header_nn を $pin_socket_nn に差し込む x2
+    1. $micon_normal_nn を $pin_header_nn にのせる
+    1. マスキングテープで上記を固定する
 
-※ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (未作成)](../) を参照してください。
+1. 1本目の $pin_socket_nn を基板にはんだ付けする
+    1. $pin_socket_nn の端の1箇所をはんだ付けする
+    1. $pin_socket_nn が基板から浮いていないことを確認する
+    1. $pin_socket_nn の反対端の1箇所をはんだ付けする
+    1. $pin_socket_nn が基板から浮いていないことを確認する
+    1. $pin_socket_nn の残りをはんだ付けする
 
-#### $reset_sw_nn (5/6)
+1. 2本目の $pin_socket_nn を基板にはんだ付けする
+    1. $pin_socket_nn の端の1箇所をはんだ付けする
+    1. $pin_socket_nn が基板から浮いていないことを確認する
+    1. $pin_socket_nn の反対端の1箇所をはんだ付けする
+    1. $pin_socket_nn が基板から浮いていないことを確認する
+    1. $pin_socket_nn の残りをはんだ付けする
 
-#### ワイヤ (6/6)
+    ※ここまでマスキングテープを剥がす必要はないはずです
+
+1. 1本目の $pin_header_nn を基板にはんだ付けする
+    1. $pin_header_nn の端の1箇所をはんだ付けする
+    1. $pin_header_nn が基板から浮いていないことを確認する
+    1. $pin_header_nn の反対端の1箇所をはんだ付けする
+    1. $pin_header_nn が基板から浮いていないことを確認する
+    1. $pin_header_nn の残りをはんだ付けする
+
+1. 2本目の $pin_header_nn を基板にはんだ付けする
+    1. $pin_header_nn の端の1箇所をはんだ付けする
+    1. $pin_header_nn が基板から浮いていないことを確認する
+    1. $pin_header_nn の反対端の1箇所をはんだ付けする
+    1. $pin_header_nn が基板から浮いていないことを確認する
+    1. $pin_header_nn の残りをはんだ付けする
+
+1. マスキングテープを剥がして捨てる
+
+#### $reset_sw_nn (4/5)
+
+1. $reset_sw_nn を基板にはんだ付けする
+    1. $reset_sw_nn を基板に取り付ける  
+       ※ $reset_sw_nn を取り付ける面は ダイオード と同じです
+    1. $reset_sw_nn が基板から浮いていないことを確認する
+    1. $reset_sw_nn をはんだ付けする
+
+
+#### ワイヤー (5/5)
 
 #### 番外：BMP用電源パーツの取り付け (別資料)
 
@@ -183,19 +232,17 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
 
 ### 組み立て
 
-1. $stabi_nn の取り付け
+1. $stabi_nn を取り付ける
 
-1. $pcb_nn と $plate_nn の合体
+1. $pcb_nn と $plate_nn を合体する
 
-1. $switch_nn の取り付け
+1. $switch_nn を取り付ける
 
-1. $micon_normal_nn の取り付け
+1. $daughter_board_rivet_nn を取り付ける
 
-1. $daughter_board_rivet_nn の取り付け
+1. $jst_wire_nn を接続する ($cased_nn と $pcb_nnの合体)
 
-1. $jst_wire_nn の接続 ($cased_nn と $pcb_nnの合体)
-
-1. $cased_nn と $caseu_nn の合体 (終)
+1. $cased_nn と $caseu_nn を合体する (終)
 
 
 ### ハードウェア作業の終わり
