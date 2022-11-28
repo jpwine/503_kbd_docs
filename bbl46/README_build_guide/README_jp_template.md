@@ -2,17 +2,21 @@
 
 ## 資料構成
 
-1. 紹介
-    1. キット付属パーツ
-    1. キット外のパーツ
-    1. 組み立てに必要な工具など
-1. ハードウェア作業
-    1. はんだ付け
-    1. ケースの工作
-    1. 組み立て
-1. ソフトウェア作業
-    1. ProMicro
-1. キーマップ設定作業
+1. [紹介](#%E7%B4%B9%E4%BB%8B)
+    1. [キット付属パーツ](#%E3%82%AD%E3%83%83%E3%83%88%E4%BB%98%E5%B1%9E%E3%83%91%E3%83%BC%E3%83%84)
+    1. [キット外のパーツ](#%E3%82%AD%E3%83%83%E3%83%88%E5%A4%96%E3%81%AE%E3%83%91%E3%83%BC%E3%83%84)
+    1. [組み立てに必要な工具など](#%E7%B5%84%E3%81%BF%E7%AB%8B%E3%81%A6%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E5%B7%A5%E5%85%B7%E3%81%AA%E3%81%A9)
+1. [ハードウェア作業](#%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E4%BD%9C%E6%A5%AD)
+    1. [はんだ付け](#%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91-5)
+    1. [ケースの工作](#%E3%82%B1%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A5%E4%BD%9C)
+    1. [組み立て](#%E7%B5%84%E3%81%BF%E7%AB%8B%E3%81%A6)
+1. [ソフトウェア作業](#%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E4%BD%9C%E6%A5%AD)
+    1. [$micon_normal_nn のファームウェアの書き込み](#pro-micro-%E3%81%AE%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF-by-remap)
+1. [キーマップ設定作業](#%E3%82%AD%E3%83%BC%E3%83%9E%E3%83%83%E3%83%97%E8%A8%AD%E5%AE%9A%E4%BD%9C%E6%A5%AD)
+    1. [キーマップの設定](#%E3%82%AD%E3%83%BC%E3%83%9E%E3%83%83%E3%83%97%E3%81%AE%E8%A8%AD%E5%AE%9A-by-remap)
+
+<BR>
+<BR>
 
 <!------------ 紹介 ------------>
 
@@ -115,6 +119,9 @@
 
 
 
+<BR>
+<BR>
+
 <!------------ ハードウェア ------------>
 
 ## ハードウェア作業
@@ -125,9 +132,15 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 コネクタを補強します。  
 最初の作業がオプションとなりますが、完了までにかかる時間のほとんどが放置時間ですので、先に済ませます。
 
-{{ 画像 }}
+1. エポキシ接着剤 で $micon_normal_nn のUSBコネクタの周囲を補強する
 
-### はんだ付け (/6)
+    <img src="./images/micon_board_bond.jpg" width="320px">
+
+1. 放置し、次の作業をすすめる
+
+<BR>
+
+### はんだ付け (/5)
 
 大変な作業から順に並べています。
 2つ目が終わるとほぼ終わっています。  
@@ -137,11 +150,19 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 
 1. 1つ目の $diode_nn を基板にはんだ付けする
     1. 部品を載せる前に、2つある■( `[■ ▷| ■]` )の片側に予備はんだを盛る  
-       ※ はんだごてを持つ手側の■に盛るとよいです
+       ※ はんだごてを持つ手側の■に盛るとよいです  
+
+       <img src="./images/handa_diode_state01.jpg" width="320px"><img src="./images/handa_diode_state11.jpg" width="320px">
     1. $diode_nn の片足を予備はんだと接合する  
-       ※ ダイオードに印字されている `|` と`[■ ▷| ■]` の `▷|` を合わせてください
-    1. $diode_nn が基板から浮いていないことを確認する
+       ※ ダイオードに印字されている `|` と`[■ ▷| ■]` の `▷|` を合わせてください  
+
+       <img src="./images/handa_diode_state12.jpg" width="320px"><img src="./images/handa_diode_state13.jpg" width="320px">
+    1. $diode_nn が基板から浮いていないことを確認する  
+
+       <img src="./images/handa_diode_state14.jpg" width="320px">
     1. $diode_nn の未接合の足をはんだ付けする
+
+       <img src="./images/handa_diode_state21.jpg" width="320px">
     1. $diode_nn が基板から浮いていないことを確認する
 
 1. 残る45個の $diode_nn を基板にはんだ付けする
@@ -155,11 +176,30 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 
 #### $sw_socket_nn のはんだ付け (2/5)
 
+手前の $sw_socket_nn は、キー幅変更の都合でほぼ同じ位置の上下2箇所に$sw_socket_nn を装着可能としています。  
+意図しない箇所に $sw_socket_nn を装着すると、修正の手数が増え、かつ部品が不足します。  
+キー幅と装着箇所は以下のように複雑になってしまっているため、先に装着箇所を決定し、マークしてください。
+
+<!--
+<img src="./images/socket_layout01.jpg" height="250px">
+<img src="./images/socket_layout02.jpg" height="250px">
+                                                    -->
+
+<img src="./images/socket_layout03.jpg" height="300px">
+
 1. 1つ目の $sw_socket_nn を基板にはんだ付けする
     1. 部品を載せる前に、2つあるスペースの片側に予備はんだを盛る
+
+       <img src="./images/handa_sw_state11.jpg" width="320px">
     1. $sw_socket_nn の片足を予備はんだと接合する
+
+       <img src="./images/handa_sw_state12.jpg" width="320px">
     1. $sw_socket_nn が基板から浮いていないことを確認する
+
+       <img src="./images/handa_sw_state13.jpg" width="320px">
     1. $sw_socket_nn の未接合の足をはんだ付けする
+
+       <img src="./images/handa_sw_state21.jpg" width="320px">
     1. $sw_socket_nn が基板から浮いていないことを確認する
 
 1. 残る45個の $sw_socket_nn を基板にはんだ付けする
@@ -172,52 +212,79 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 #### $pin_socket_nn と $pin_header_nn のはんだ付け (3/5)
 
 1. 下準備
-    1. $pin_socket_nn を基板にのせる x2  
+    1. $pin_socket_nn を $pcb_nn にのせる x2  
        ※ $pin_socket_nn をのせる面は ダイオード と同じです
+
+       <img src="./images/handa_pin_header_state01.jpg" width="320px"><img src="./images/handa_pin_header_state02.jpg" width="320px">
     1. $pin_header_nn を1pin分カットし、12pinにする x2  
        ※ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合はカットせずに [BMP (未作成)](../) を参照してください
-    1. $pin_header_nn を $pin_socket_nn に差し込む x2
+
+       <img src="./images/handa_pin_header_state03.jpg" width="320px">
+    1. $pin_header_nn を $pin_socket_nn に差し込む x2  
+       ※ 画像は隙間がありますが、次の $micon_normal_nn をのせたあとにぎゅっと押して隙間をなくします  
+       ※ $micon_normal_nn の場合、さきほど 1pin 切り取ったとおり $pin_socket_nn と $pin_header_nn の数が一致していない状態が正常となります
+
+       <img src="./images/handa_pin_header_state04.jpg" width="320px">
     1. $micon_normal_nn を $pin_header_nn にのせる
+
+       <img src="./images/handa_pin_header_state05.jpg" width="320px">
     1. マスキングテープで上記を固定する
 
-1. 1本目の $pin_socket_nn を基板にはんだ付けする
-    1. $pin_socket_nn の端の1箇所をはんだ付けする
-    1. $pin_socket_nn が基板から浮いていないことを確認する
-    1. $pin_socket_nn の反対端の1箇所をはんだ付けする
-    1. $pin_socket_nn が基板から浮いていないことを確認する
-    1. $pin_socket_nn の残りをはんだ付けする
+       <img src="./images/handa_pin_header_state06.jpg" width="320px">
 
-1. 2本目の $pin_socket_nn を基板にはんだ付けする
-    1. $pin_socket_nn の端の1箇所をはんだ付けする
+1. 1本目の $pin_socket_nn を $pcb_nn にはんだ付けする
+    1. $pin_socket_nn の端の1pinをはんだ付けする
+
+       <img src="./images/handa_pin_header_state11.jpg" width="320px">
+    1. $pin_socket_nn が $pcb_nn から浮いていないことを確認する
+    1. $pin_socket_nn の反対端の1pinをはんだ付けする
+
+       <img src="./images/handa_pin_header_state12.jpg" width="320px">
+    1. $pin_socket_nn が $pcb_nn から浮いていないことを確認する
+    1. $pin_socket_nn の残りのpinをはんだ付けする
+
+1. 2本目の $pin_socket_nn を $pcb_nn にはんだ付けする
+    1. $pin_socket_nn の端の1pinをはんだ付けする
     1. $pin_socket_nn が基板から浮いていないことを確認する
-    1. $pin_socket_nn の反対端の1箇所をはんだ付けする
+    1. $pin_socket_nn の反対端の1pinをはんだ付けする
     1. $pin_socket_nn が基板から浮いていないことを確認する
-    1. $pin_socket_nn の残りをはんだ付けする
+    1. $pin_socket_nn の残りのpinをはんだ付けする
 
-    ※ここまでマスキングテープを剥がす必要はないはずです
+   ※ここまでマスキングテープを剥がす必要はないはずです
 
-1. 1本目の $pin_header_nn を基板にはんだ付けする
-    1. $pin_header_nn の端の1箇所をはんだ付けする
-    1. $pin_header_nn が基板から浮いていないことを確認する
-    1. $pin_header_nn の反対端の1箇所をはんだ付けする
-    1. $pin_header_nn が基板から浮いていないことを確認する
-    1. $pin_header_nn の残りをはんだ付けする
+1. 1本目の $pin_header_nn を $micon_normal_nn にはんだ付けする
+    1. $pin_header_nn の端の1pinをはんだ付けする
+    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
+    1. $pin_header_nn の反対端の1pinをはんだ付けする
+    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
 
-1. 2本目の $pin_header_nn を基板にはんだ付けする
-    1. $pin_header_nn の端の1箇所をはんだ付けする
-    1. $pin_header_nn が基板から浮いていないことを確認する
-    1. $pin_header_nn の反対端の1箇所をはんだ付けする
-    1. $pin_header_nn が基板から浮いていないことを確認する
-    1. $pin_header_nn の残りをはんだ付けする
+1. 2本目の $pin_header_nn を $micon_normal_nn にはんだ付けする
+    1. $pin_header_nn の端の1pinをはんだ付けする
+    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
+    1. $pin_header_nn の反対端の1pinをはんだ付けする
+    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
+
+1. 2本の $pin_header_nn を $micon_normal_nn にはんだ付けする
+    1. $pin_header_nn の残りのpinをはんだ付けする
 
 1. マスキングテープを剥がして捨てる
+1. 2本の $pin_socket_nn の $pcb_nn から余分に伸びている足をカットする
+
+    <img src="./images/handa_pin_header_state21.jpg" width="320px">
+ 1. 2本の $pin_header_nn の $micon_normal_nn から余分に伸びている足をカットする
+
+    <img src="./images/handa_pin_header_state22.jpg" width="320px">
+
+
 
 #### $reset_sw_nn のはんだ付け (4/5)
 
-1. $reset_sw_nn を基板にはんだ付けする
-    1. $reset_sw_nn を基板に取り付ける  
+1. $reset_sw_nn を $pcb_nn にはんだ付けする
+    1. $reset_sw_nn を $pcb_nn に取り付ける  
        ※ $reset_sw_nn を取り付ける面は ダイオード と同じです
-    1. $reset_sw_nn が基板から浮いていないことを確認する
+
+        <img src="./images/handa_reset_sw_state01.jpg" width="320px">
+    1. $reset_sw_nn が $pcb_nn から浮いていないことを確認する
     1. $reset_sw_nn をはんだ付けする
 
 
@@ -227,16 +294,43 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn をUSBケーブルで直接接続するわけではありません。  
 `[PC]--[USB Type-Cケーブル]--[$daughter_board_nn]--[$jst_wire_nn]--[$micon_normal_nn]` という物理的な接続となります (以下は取り出した写真) 。
 
-{{ 画像 }}
+<img src="./images/pc-micon.jpg" width="320px">
 
 このとき、[$micon_normal_nn]と接続する[$jst_wire_nn]にUSBオスコネクタが取り付けられていませんので、  
 使用する $micon_normal_nn に合わせたコネクタ と USBオスコネクタ をはんだ付けします。
 
-* $usb_b_con_nn と $jst_wire_nn をはんだ付けする場合
+1. 共通
+    1. $jst_wire_nn をワイヤー端から10cmほどカットする
 
+        <img src="./images/jst_wire_state01.jpg" width="480px">
+    1. $jst_wire_nn のワイヤー端の皮膜を5mmほど剥く
 
-* $usb_c_con_nn と $jst_wire_nn をはんだ付けする場合
+        <img src="./images/jst_wire_state02.jpg" width="320px">
+    1. $jst_wire_nn のワイヤー端の露出した芯線をそれぞれ撚る
+    1. $jst_wire_nn のワイヤー端の露出したそれぞれの芯線をはんだでコーティングし、まとめておく
 
+        <img src="./images/jst_wire_state03.jpg" width="320px">
+
+1. $usb_b_con_nn と $jst_wire_nn をはんだ付けする場合  
+    ※ 難易度が非常に高いので、 変換アダプタを購入のうえ $usb_c_con_nn の利用をご検討ください  
+    　 なお、変換アダプタは厚さに制限があり、厚さ 6mm 程度で $pcb_nn と干渉するため、厚さ 5mm以下がよいと思います
+    1. $usb_b_con_nn の端子に予備はんだを盛る
+
+        <img src="./images/jst_wire_b_state01.jpg" width="320px">
+    1. 画像のとおりにはんだ付けする
+
+        <img src="./images/jst_wire_b_state11.jpg" width="480px">
+
+        <img src="./images/jst_wire_b_state21.jpg" width="320px">
+1. $usb_c_con_nn と $jst_wire_nn をはんだ付けする場合
+    1. $usb_c_con_nn の端子に予備はんだを盛る
+    1. 画像のとおりにはんだ付けする
+
+        <img src="./images/jst_wire_c_state11.jpg" width="480px">  
+
+        <img src="./images/jst_wire_c_state21.jpg" width="320px">
+
+なお、はんだ付けのために剥いたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
 
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
@@ -244,9 +338,11 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
 $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (未作成)](../) を参照してください。
 
 
+<BR>
+
 ### ケースの工作
 
-#### $porond_nn と $poronu_nn の貼り付け
+#### $poronu_nn と $porond_nn の貼り付け
 
 1. $caseu_nn に $poronu_nn を貼り付ける
     1. $caseu_nn の10箇所のくぼみに $poronu_nn を貼り付ける  
@@ -256,15 +352,18 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
     1. 使用する支柱を選ぶ
         * $cased_nn の10箇所のくぼみについて  
           肉抜きのない支柱と肉抜きのある支柱の計20本 (短4本x2+長6本x2) の取り付け位置を決める  
-          {{ 画像 }}
-        * 参考
+
+          <img src="./images/pillar_pos00.jpg" width="480px">
+        * 参考取り付け位置
             * 1,2,3,4: $ps1_nn + 5,6,7,8,9,10: $pl1_nn
             * 1,4: $ps2_nn + 2,3: $ps1_nn + 5,6,9,10: $pl2_nn + 7,8: $pl1_nn
             * 2,3: $ps2_nn + 5,6,9,10: $pl2_nn
 
-              押し込んだときに肉抜きの支柱がちょっとたわむので、多少肉抜きの意味があるみたいです
-    1. 使用する支柱に $porond_nn を貼り付ける
-       ※ $porond_nn は 20本入っているポロンシートです
+              肉抜きの支柱は押し込まれたときにちょっとたわむため、肉抜きの意味が多少あると言われています
+    1. 使用する支柱に $porond_nn を貼り付ける  
+       ※ $porond_nn は 20本入っているポロンシートです  
+       ※ 支柱は取り付け向きがあり、フィレットがかかっている面を中心に向けます  
+       ※ 支柱の取り付け位置は支柱(短)が1-4、支柱(長)が5-10となります
 
 #### 支柱 の取り付け
 
@@ -273,49 +372,128 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
        ※ 木工用ボンドで固定するのがおすすめです (取替時にカスを除去しやすい)
 
 
+
+<BR>
+
 ### 組み立て
 
 1. $stabi_nn を取り付ける
 
-1. $pcb_nn と $plate_nn を合体する
+1. $pcb_nn に $scr_smallb_nn と $spacer_nn を取り付ける  
+   ※ $scr_smallb_nn は頭が丸いネジです
 
-1. $switch_nn を取り付ける
+    <img src="./images/assem_state11.jpg" width="480px">
+1. $pcb_nn と $plate_nn を $scr_smallf_nn で合体する  
+   ※ $scr_smallf_nn は頭が平たいネジで、完成後に目立ちにくくなります
 
-1. $daughter_board_rivet_nn を取り付ける
+    <img src="./images/assem_state12.jpg" width="480px">
+1. $switch_nn を $plate_nn に取り付ける  
+   ※ $pcb_nn を裏から抑えながらスイッチを取り付けると、はんだづけ箇所の破損を防ぐ効果があります  
+   ※ スイッチの前後向きや、左右位置に気をつけてください
 
+1. $micon_normal_nn を $pcb_nn に取り付ける  
+   ※ $micon_normal_nn を使う場合は `BAT-` や `BAT+` のpinを空けて取り付けてください
+
+    <img src="./images/assem_state13.jpg" width="400px">
+1. $daughter_board_nn を $daughter_board_rivet_nn で $cased_nn に取り付ける  
+   ※ $daughter_board_rivet_nn は少し短い4本入りのものです
+
+    <img src="./images/assem_state21.jpg" width="320px">
 1. $jst_wire_nn を接続する ($cased_nn と $pcb_nnの合体)
 
-1. $cased_nn と $caseu_nn を合体する (終)
+    <img src="./images/assem_state22.jpg" width="400px">
+1. $cased_nn と $caseu_nn を $case_rivet_nn で合体する (終)  
+   ※ $case_rivet_nn は少し長い6本入りのものです
+
+    <img src="./images/assem_state31.jpg" width="480px">
 
 
 ### ハードウェア作業の終わり
 
 以上で見た目がキーボードとなりました。  
-キーボードとして使うためには $micon_normal_nn にファームウェアが書き込まれている必要があります。  
+キーボードとして使うためには $micon_normal_nn にファームウェア適切なファームウェアが必要です。  
 次のソフトウェアの作業を実施してください。
+
+<BR>
+<BR>
+
 
 <!------------ ソフトウェア ------------>
 
 ## ソフトウェア作業
 
-### $micon_normal_nn のファームウェア書き込み
+### $micon_normal_nn のファームウェア書き込み (by Remap)
 
 ※$micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (未作成)](../) を参照してください。
+
+1. ケースに $micon_normal_nn を納めている場合は取り出し、 $jst_wire_nn を外す
+1. $pcb_nn に $micon_normal_nn を取り付けたまま USBケーブル でPCに接続する
+1. Remapにて、ファームウェアファイルを $micon_normal_nn に書き込む
+    1. [こちら](https://remap-keys.app/catalog/3rpQkcurHny6IPkoYaSW/firmware)に Google Chrome でアクセスるす
+    1. [FLASH] を押下する
+
+        <img src="./images/flash_state01.png" width="480px">
+    1. [Bootloader] に [caterina] を選択し、もう一度[FLASH]を押下する
+
+        <img src="./images/flash_state02.png" width="480px">
+    1. 「remap-keys.app がシリアルポートへの接続を要求しています」と表示されたら、$pcb_nn の $reset_sw_nn を押す
+
+        <img src="./images/flash_state03.png" width="480px">
+    1. $micon_normal_nn のLEBが赤く点灯したら、即座に[Arduino Micro]を選択し、即座に[接続]を押下する
+
+        <img src="./images/flash_state04.png" width="480px">
+    1. 進捗が100%となり、「Writing the firmware finished successfully.」と表示されたら[CLOSE]を押下する
+
+        <img src="./images/flash_state05.png" width="480px">
+1. ケースに $pcb_nn を納めて組み立てなおす
 
 ### ソフトウェア作業の終わり
 
 以上で $micon_normal_nn にファームウェアが書き込まれ、すでにキーボードとして認識された反応が PC で発生したものと思います。  
 現在のキーボードで入力可能な文字は以下のようになっており、数字を打てないなど不便な状態となっています。
 
-{{ 画像 }}
+<img src="./images/first_keymap.png" width="480px">
 
 次のキーマップ設定作業を実施してください。
+
+
+<BR>
+<BR>
+
 
 <!------------ ソフトウェア ------------>
 
 ## キーマップ設定作業
 
-### remap/Google Chromeでキーマップを設定する
+### キーマップの設定 (by Remap)
+
+1. Remapにて、ファームウェアファイルを $micon_normal_nn に書き込む
+    1. [こちら](https://remap-keys.app)に Google Chrome でアクセスする
+
+    1. [START REMAP FOR YOUR KEYBOARD] を押下する
+
+        <img src="./images/remap_keymap01.png" width="480px">
+    1. [+KEYBOARD] を押下する
+
+        <img src="./images/remap_keymap02.png" width="480px">
+    1. 「remap-keys.app が HID デバイスへの接続を要求しています」と表示されたら[bbl46] を選択し、[接続]を押下する
+
+        <img src="./images/remap_keymap03.png" width="480px">
+    1. お好みのキーマップを書き込んで [flash] を押下する
+
+        <img src="./images/remap_keymap04.png" width="480px">
+
+### キーマップの設定終わり
+
+以上でキーマップ設定が終わり、キーボードとして完成しました。  
+お疲れ様でした。
 
 
+<BR>
+<BR>
 
+
+# さいごに
+
+自作キーボードのHW/SW設計構築の普及を進めてくださっている先人に感謝申し上げます。  
+また、 $kbname に興味を持ってくださいまして、ありがとうございます。
