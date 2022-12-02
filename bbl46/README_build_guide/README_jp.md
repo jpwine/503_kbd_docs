@@ -86,7 +86,7 @@
 | 低頭精密小ねじ (M2/3mm)  | 5 |
 | 小ねじ (M2)  | 5 |
 
-※ 付属品の外観ならびに型番は [パーツリスト(未作成)](../README_parts/README_jp.md) を参照してください
+※ 付属品の外観ならびに型番は [パーツリスト(未完成)](../README_parts/README_jp.md) を参照してください
 
 ### キット外のパーツ
 
@@ -149,6 +149,10 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
 #### ダイオード (SMDタイプ) のはんだ付け (1/5)
 
 1. 1つ目の ダイオード (SMDタイプ) を基板にはんだ付けする
+    * **注意事項** D91とD92 は ダイオード (SMDタイプ) の取り付け対象外
+
+        <img src="./images/handa_diode_state00.jpg" width="320px">
+
     1. 部品を載せる前に、2つある■( `[■ ▷| ■]` )の片側に予備はんだを盛る  
        ※ はんだごてを持つ手側の■に盛るとよいです  
 
@@ -217,7 +221,7 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
 
        <img src="./images/handa_pin_header_state01.jpg" width="320px"><img src="./images/handa_pin_header_state02.jpg" width="320px">
     1. 13pinピンヘッダー を1pin分カットし、12pinにする x2  
-       ※ Pro Micro の代わりに MLE Micro Pro を使用する場合はカットせずに [BMP (未作成)](../) を参照してください
+       ※ Pro Micro の代わりに BLE Micro Pro を使用する場合はカットせずに [BMP (未作成)](../) を参照してください
 
        <img src="./images/handa_pin_header_state03.jpg" width="320px">
     1. 13pinピンヘッダー を 13pinピンソケット に差し込む x2  
@@ -252,7 +256,7 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
 
    ※ここまでマスキングテープを剥がす必要はないはずです
 
-1. 1本目の 13pinピンヘッダー を Pro Micro にはんだ付けする
+1. 1本目の (1pinカットした-以降省略) 13pinピンヘッダー を Pro Micro にはんだ付けする
     1. 13pinピンヘッダー の端の1pinをはんだ付けする
     1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
     1. 13pinピンヘッダー の反対端の1pinをはんだ付けする
@@ -264,10 +268,11 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
     1. 13pinピンヘッダー の反対端の1pinをはんだ付けする
     1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
 
+1. マスキングテープを剥がす
+
 1. 2本の 13pinピンヘッダー を Pro Micro にはんだ付けする
     1. 13pinピンヘッダー の残りのpinをはんだ付けする
 
-1. マスキングテープを剥がして捨てる
 1. 2本の 13pinピンソケット の PCB から余分に伸びている足をカットする
 
     <img src="./images/handa_pin_header_state21.jpg" width="320px">
@@ -335,7 +340,7 @@ PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSB
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
 
-Pro Micro の代わりに MLE Micro Pro を使用する場合は [BMP (未作成)](../) を参照してください。
+Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成)](../) を参照してください。
 
 
 <BR>
@@ -411,7 +416,7 @@ Pro Micro の代わりに MLE Micro Pro を使用する場合は [BMP (未作成
 ### ハードウェア作業の終わり
 
 以上で見た目がキーボードとなりました。  
-キーボードとして使うためには Pro Micro にファームウェア適切なファームウェアが必要です。  
+キーボードとして使うためには Pro Micro に適切なファームウェアが書き込まれている必要があります。  
 次のソフトウェアの作業を実施してください。
 
 <BR>
@@ -424,7 +429,7 @@ Pro Micro の代わりに MLE Micro Pro を使用する場合は [BMP (未作成
 
 ### Pro Micro のファームウェア書き込み (by Remap)
 
-※Pro Micro の代わりに MLE Micro Pro を使用する場合は [BMP (未作成)](../) を参照してください。
+※Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成)](../) を参照してください。
 
 1. ケースに Pro Micro を納めている場合は取り出し、 JST SH型 4ピンコネクタ付きジャンパワイヤ を外す
 1. PCB に Pro Micro を取り付けたまま USBケーブル でPCに接続する
@@ -450,7 +455,7 @@ Pro Micro の代わりに MLE Micro Pro を使用する場合は [BMP (未作成
 ### ソフトウェア作業の終わり
 
 以上で Pro Micro にファームウェアが書き込まれ、すでにキーボードとして認識された反応が PC で発生したものと思います。  
-現在のキーボードで入力可能な文字は以下のようになっており、数字を打てないなど不便な状態となっています。
+現在のキーボードでは以下のように数字を入力できないなど不便な状態となっています。
 
 <img src="./images/first_keymap.png" width="480px">
 
@@ -461,13 +466,13 @@ Pro Micro の代わりに MLE Micro Pro を使用する場合は [BMP (未作成
 <BR>
 
 
-<!------------ ソフトウェア ------------>
+<!------------ キーマップ ------------>
 
 ## キーマップ設定作業
 
 ### キーマップの設定 (by Remap)
 
-1. Remapにて、ファームウェアファイルを Pro Micro に書き込む
+1. Remapにて、キーマップ設定を変更する
     1. [こちら](https://remap-keys.app)に Google Chrome でアクセスする
 
     1. [START REMAP FOR YOUR KEYBOARD] を押下する

@@ -53,7 +53,7 @@ declare -x  reset_sw_nn="RST用タクタイルスイッチ"
 # Non-included parts
 
 declare -x  micon_normal_nn="Pro Micro"
-declare -x  micon_bmp_nn="MLE Micro Pro"
+declare -x  micon_bmp_nn="BLE Micro Pro"
 declare -x  switch_nn="MX互換スイッチ"
 declare -x  keycap_nn="キーキャップ"
 declare -x  stabi_nn="2U スタビライザー"
