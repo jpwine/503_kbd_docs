@@ -86,7 +86,7 @@
 | $scr_smallf_nn  | 5 |
 | $scr_smallb_nn  | 5 |
 
-※ 付属品の外観ならびに型番は [パーツリスト(未作成)](../README_parts/README_${_lang}.md) を参照してください
+※ 付属品の外観ならびに型番は [パーツリスト(未完成)](../README_parts/README_${_lang}.md) を参照してください
 
 ### キット外のパーツ
 
@@ -149,6 +149,10 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 #### $diode_nn のはんだ付け (1/5)
 
 1. 1つ目の $diode_nn を基板にはんだ付けする
+    * **注意事項** D91とD92 は $diode_nn の取り付け対象外
+
+        <img src="./images/handa_diode_state00.jpg" width="320px">
+
     1. 部品を載せる前に、2つある■( `[■ ▷| ■]` )の片側に予備はんだを盛る  
        ※ はんだごてを持つ手側の■に盛るとよいです  
 
@@ -252,7 +256,7 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 
    ※ここまでマスキングテープを剥がす必要はないはずです
 
-1. 1本目の $pin_header_nn を $micon_normal_nn にはんだ付けする
+1. 1本目の (1pinカットした-以降省略) $pin_header_nn を $micon_normal_nn にはんだ付けする
     1. $pin_header_nn の端の1pinをはんだ付けする
     1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
     1. $pin_header_nn の反対端の1pinをはんだ付けする
@@ -264,10 +268,11 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
     1. $pin_header_nn の反対端の1pinをはんだ付けする
     1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
 
+1. マスキングテープを剥がす
+
 1. 2本の $pin_header_nn を $micon_normal_nn にはんだ付けする
     1. $pin_header_nn の残りのpinをはんだ付けする
 
-1. マスキングテープを剥がして捨てる
 1. 2本の $pin_socket_nn の $pcb_nn から余分に伸びている足をカットする
 
     <img src="./images/handa_pin_header_state21.jpg" width="320px">
@@ -411,7 +416,7 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
 ### ハードウェア作業の終わり
 
 以上で見た目がキーボードとなりました。  
-キーボードとして使うためには $micon_normal_nn にファームウェア適切なファームウェアが必要です。  
+キーボードとして使うためには $micon_normal_nn に適切なファームウェアが書き込まれている必要があります。  
 次のソフトウェアの作業を実施してください。
 
 <BR>
@@ -450,7 +455,7 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
 ### ソフトウェア作業の終わり
 
 以上で $micon_normal_nn にファームウェアが書き込まれ、すでにキーボードとして認識された反応が PC で発生したものと思います。  
-現在のキーボードで入力可能な文字は以下のようになっており、数字を打てないなど不便な状態となっています。
+現在のキーボードでは以下のように数字を入力できないなど不便な状態となっています。
 
 <img src="./images/first_keymap.png" width="480px">
 
@@ -461,13 +466,13 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
 <BR>
 
 
-<!------------ ソフトウェア ------------>
+<!------------ キーマップ ------------>
 
 ## キーマップ設定作業
 
 ### キーマップの設定 (by Remap)
 
-1. Remapにて、ファームウェアファイルを $micon_normal_nn に書き込む
+1. Remapにて、キーマップ設定を変更する
     1. [こちら](https://remap-keys.app)に Google Chrome でアクセスする
 
     1. [START REMAP FOR YOUR KEYBOARD] を押下する
