@@ -221,7 +221,7 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
 
        <img src="./images/handa_pin_header_state01.jpg" width="320px"><img src="./images/handa_pin_header_state02.jpg" width="320px">
     1. 13pinピンヘッダー を1pin分カットし、12pinにする x2  
-       ※ Pro Micro の代わりに BLE Micro Pro を使用する場合はカットせずに [BMP (未作成)](../) を参照してください
+       ※ Pro Micro の代わりに BLE Micro Pro を使用する場合はカットせずに 13pin のままはんだ付けしてください
 
        <img src="./images/handa_pin_header_state03.jpg" width="320px">
     1. 13pinピンヘッダー を 13pinピンソケット に差し込む x2  
@@ -256,7 +256,7 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
 
    ※ここまでマスキングテープを剥がす必要はないはずです
 
-1. 1本目の (1pinカットした-以降省略) 13pinピンヘッダー を Pro Micro にはんだ付けする
+1. 1本目の 13pinピンヘッダー を Pro Micro にはんだ付けする
     1. 13pinピンヘッダー の端の1pinをはんだ付けする
     1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
     1. 13pinピンヘッダー の反対端の1pinをはんだ付けする
@@ -340,7 +340,7 @@ PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSB
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
 
-Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成)](../) を参照してください。
+Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP](../README_bmp/README_jp.md#%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91-4) を参照してください。
 
 
 <BR>
@@ -407,6 +407,9 @@ Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成
 1. JST SH型 4ピンコネクタ付きジャンパワイヤ を接続する (ケース(下) と PCBの合体)
 
     <img src="./images/assem_state22.jpg" width="400px">
+1. スライドスイッチ穴フィラー を ケース(下) に取り付ける  
+   ※ BLE Micro Pro を使用する場合は スライドスイッチ となります
+
 1. ケース(下) と ケース(上) を ケース用プッシュリベット(長) で合体する (終)  
    ※ ケース用プッシュリベット(長) は少し長い6本入りのものです
 
@@ -429,7 +432,7 @@ Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成
 
 ### Pro Micro のファームウェア書き込み (by Remap)
 
-※Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成)](../) を参照してください。
+※Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP](../README_bmp/README_jp.md#%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E4%BD%9C%E6%A5%AD) を参照してください。
 
 1. ケースに Pro Micro を納めている場合は取り出し、 JST SH型 4ピンコネクタ付きジャンパワイヤ を外す
 1. PCB に Pro Micro を取り付けたまま USBケーブル でPCに接続する
@@ -481,10 +484,11 @@ Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP (未作成
     1. [+KEYBOARD] を押下する
 
         <img src="./images/remap_keymap02.png" width="480px">
-    1. 「remap-keys.app が HID デバイスへの接続を要求しています」と表示されたら[bbl46] を選択し、[接続]を押下する
+    1. 「remap-keys.app が HID デバイスへの接続を要求しています」と表示されたら[bbl46] を選択し、[接続]を押下する  
+       ※ Pro Micro の場合は「 bbl46 」を、BLE Micro Pro の場合は「 (BMP)bbl46 」を選択してください
 
         <img src="./images/remap_keymap03.png" width="480px">
-    1. お好みのキーマップを書き込んで [flash] を押下する
+    1. お好みのキーマップを作成し、 [flash] を押下する
 
         <img src="./images/remap_keymap04.png" width="480px">
 

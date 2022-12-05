@@ -221,7 +221,7 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 
        <img src="./images/handa_pin_header_state01.jpg" width="320px"><img src="./images/handa_pin_header_state02.jpg" width="320px">
     1. $pin_header_nn を1pin分カットし、12pinにする x2  
-       ※ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合はカットせずに [BMP (未作成)](../) を参照してください
+       ※ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合はカットせずに 13pin のままはんだ付けしてください
 
        <img src="./images/handa_pin_header_state03.jpg" width="320px">
     1. $pin_header_nn を $pin_socket_nn に差し込む x2  
@@ -256,7 +256,7 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 
    ※ここまでマスキングテープを剥がす必要はないはずです
 
-1. 1本目の (1pinカットした-以降省略) $pin_header_nn を $micon_normal_nn にはんだ付けする
+1. 1本目の $pin_header_nn を $micon_normal_nn にはんだ付けする
     1. $pin_header_nn の端の1pinをはんだ付けする
     1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
     1. $pin_header_nn の反対端の1pinをはんだ付けする
@@ -340,7 +340,7 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
 
-$micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (未作成)](../) を参照してください。
+$micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP](../README_bmp/README_${_lang}.md#%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91-4) を参照してください。
 
 
 <BR>
@@ -407,6 +407,9 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
 1. $jst_wire_nn を接続する ($cased_nn と $pcb_nnの合体)
 
     <img src="./images/assem_state22.jpg" width="400px">
+1. $ssw2_nn を $cased_nn に取り付ける  
+   ※ $micon_bmp_nn を使用する場合は $ssw1_nn となります
+
 1. $cased_nn と $caseu_nn を $case_rivet_nn で合体する (終)  
    ※ $case_rivet_nn は少し長い6本入りのものです
 
@@ -429,7 +432,7 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
 
 ### $micon_normal_nn のファームウェア書き込み (by Remap)
 
-※$micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (未作成)](../) を参照してください。
+※$micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP](../README_bmp/README_${_lang}.md#%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E4%BD%9C%E6%A5%AD) を参照してください。
 
 1. ケースに $micon_normal_nn を納めている場合は取り出し、 $jst_wire_nn を外す
 1. $pcb_nn に $micon_normal_nn を取り付けたまま USBケーブル でPCに接続する
@@ -481,10 +484,11 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP (�
     1. [+KEYBOARD] を押下する
 
         <img src="./images/remap_keymap02.png" width="480px">
-    1. 「remap-keys.app が HID デバイスへの接続を要求しています」と表示されたら[bbl46] を選択し、[接続]を押下する
+    1. 「remap-keys.app が HID デバイスへの接続を要求しています」と表示されたら[bbl46] を選択し、[接続]を押下する  
+       ※ $micon_normal_nn の場合は「 $kbname 」を、$micon_bmp_nn の場合は「 (BMP)$kbname 」を選択してください
 
         <img src="./images/remap_keymap03.png" width="480px">
-    1. お好みのキーマップを書き込んで [flash] を押下する
+    1. お好みのキーマップを作成し、 [flash] を押下する
 
         <img src="./images/remap_keymap04.png" width="480px">
 
