@@ -50,12 +50,20 @@ declare -x  pin_socket_nn="13pinピンソケット"
 declare -x  pin_header_nn="13pinピンヘッダー"
 declare -x  reset_sw_nn="RST用タクタイルスイッチ"
 
+
 # Non-included parts
 
 declare -x  micon_normal_nn="Pro Micro"
-declare -x  micon_bmp_nn="BLE Micro Pro"
 declare -x  switch_nn="MX互換スイッチ"
 declare -x  keycap_nn="キーキャップ"
 declare -x  stabi_nn="2U スタビライザー"
 
 
+# BMP
+
+declare -x  micon_bmp_nn="BLE Micro Pro"
+declare -x  bmp_battery_nn="BLE Micro Pro用電池基板"
+declare -x  bmp_part01_nn="S4ショットキーダイオード"
+declare -x  bmp_part02_nn="コンデンサ"
+declare -x  bmp_part03_nn="電池ホルダー"
+declare -x  bmp_part04_nn="電源スイッチ"
