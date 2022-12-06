@@ -396,10 +396,12 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP](..
 1. $ssw2_nn を $cased_nn に取り付ける  
    ※ $micon_bmp_nn を使用する場合は $ssw1_nn となります
 
-1. $cased_nn と $caseu_nn を $case_rivet_nn で合体する (終)  
+1. $cased_nn と $caseu_nn を $case_rivet_nn で合体する  
    ※ $case_rivet_nn は少し長い6本入りのものです
 
     <img src="./images/assem_state31.jpg" width="480px">
+
+1. $cased_nn 底面のくぼみに $rubber_foot_nn を貼り付ける (終)
 
 
 ### ハードウェア作業の終わり
