@@ -304,29 +304,15 @@ PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSB
 このとき、[Pro Micro]と接続する[JST SH型 4ピンコネクタ付きジャンパワイヤ]にUSBオスコネクタが取り付けられていませんので、  
 使用する Pro Micro に合わせたコネクタ と USBオスコネクタ をはんだ付けします。
 
-1. 共通
-    1. JST SH型 4ピンコネクタ付きジャンパワイヤ をワイヤー端から10cmほどカットする
-
-        <img src="./images/jst_wire_state01.jpg" width="480px">
-    1. JST SH型 4ピンコネクタ付きジャンパワイヤ のワイヤー端の皮膜を5mmほど剥く
-
-        <img src="./images/jst_wire_state02.jpg" width="320px">
-    1. JST SH型 4ピンコネクタ付きジャンパワイヤ のワイヤー端の露出した芯線をそれぞれ撚る
-    1. JST SH型 4ピンコネクタ付きジャンパワイヤ のワイヤー端の露出したそれぞれの芯線をはんだでコーティングし、まとめておく
-
-        <img src="./images/jst_wire_state03.jpg" width="320px">
-
-1. Micro USB Type-B（2.0）端子 と JST SH型 4ピンコネクタ付きジャンパワイヤ をはんだ付けする場合  
-    ※ 難易度が非常に高いので、 変換アダプタを購入のうえ USB Type-C端子 の利用をご検討ください  
-    　 なお、変換アダプタは厚さに制限があり、厚さ 6mm 程度で PCB と干渉するため、厚さ 5mm以下がよいと思います
+1. Micro USB Type-B（2.0）端子 と JST SH型 4ピンコネクタ付きジャンパワイヤ をはんだ付けする場合
     1. Micro USB Type-B（2.0）端子 の端子に予備はんだを盛る
 
         <img src="./images/jst_wire_b_state01.jpg" width="320px">
     1. 画像のとおりにはんだ付けする
 
-        <img src="./images/jst_wire_b_state11.jpg" width="480px">
+        <img src="./images/jst_wire_b_state11b.jpg" width="480px">
 
-        <img src="./images/jst_wire_b_state21.jpg" width="320px">
+        <img src="./images/jst_wire_b_state21b.jpg" width="320px">
 1. USB Type-C端子 と JST SH型 4ピンコネクタ付きジャンパワイヤ をはんだ付けする場合
     1. USB Type-C端子 の端子に予備はんだを盛る
     1. 画像のとおりにはんだ付けする
