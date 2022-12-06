@@ -304,29 +304,15 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
 このとき、[$micon_normal_nn]と接続する[$jst_wire_nn]にUSBオスコネクタが取り付けられていませんので、  
 使用する $micon_normal_nn に合わせたコネクタ と USBオスコネクタ をはんだ付けします。
 
-1. 共通
-    1. $jst_wire_nn をワイヤー端から10cmほどカットする
-
-        <img src="./images/jst_wire_state01.jpg" width="480px">
-    1. $jst_wire_nn のワイヤー端の皮膜を5mmほど剥く
-
-        <img src="./images/jst_wire_state02.jpg" width="320px">
-    1. $jst_wire_nn のワイヤー端の露出した芯線をそれぞれ撚る
-    1. $jst_wire_nn のワイヤー端の露出したそれぞれの芯線をはんだでコーティングし、まとめておく
-
-        <img src="./images/jst_wire_state03.jpg" width="320px">
-
-1. $usb_b_con_nn と $jst_wire_nn をはんだ付けする場合  
-    ※ 難易度が非常に高いので、 変換アダプタを購入のうえ $usb_c_con_nn の利用をご検討ください  
-    　 なお、変換アダプタは厚さに制限があり、厚さ 6mm 程度で $pcb_nn と干渉するため、厚さ 5mm以下がよいと思います
+1. $usb_b_con_nn と $jst_wire_nn をはんだ付けする場合
     1. $usb_b_con_nn の端子に予備はんだを盛る
 
         <img src="./images/jst_wire_b_state01.jpg" width="320px">
     1. 画像のとおりにはんだ付けする
 
-        <img src="./images/jst_wire_b_state11.jpg" width="480px">
+        <img src="./images/jst_wire_b_state11b.jpg" width="480px">
 
-        <img src="./images/jst_wire_b_state21.jpg" width="320px">
+        <img src="./images/jst_wire_b_state21b.jpg" width="320px">
 1. $usb_c_con_nn と $jst_wire_nn をはんだ付けする場合
     1. $usb_c_con_nn の端子に予備はんだを盛る
     1. 画像のとおりにはんだ付けする
