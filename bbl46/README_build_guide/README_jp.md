@@ -305,7 +305,7 @@ PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSB
 使用する Pro Micro に合わせたコネクタ と USBオスコネクタ をはんだ付けします。
 
 1. Micro USB Type-B（2.0）端子 と JST SH型 4ピンコネクタ付きジャンパワイヤ をはんだ付けする場合
-    1. Micro USB Type-B（2.0）端子 の端子に予備はんだを盛る
+    1. Micro USB Type-B（2.0）端子 に予備はんだを盛る
 
         <img src="./images/jst_wire_b_state01.jpg" width="320px">
     1. 画像のとおりにはんだ付けする
@@ -314,14 +314,14 @@ PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSB
 
         <img src="./images/jst_wire_b_state21b.jpg" width="320px">
 1. USB Type-C端子 と JST SH型 4ピンコネクタ付きジャンパワイヤ をはんだ付けする場合
-    1. USB Type-C端子 の端子に予備はんだを盛る
+    1. USB Type-C端子 に予備はんだを盛る
     1. 画像のとおりにはんだ付けする
 
         <img src="./images/jst_wire_c_state11.jpg" width="480px">  
 
         <img src="./images/jst_wire_c_state21.jpg" width="320px">
 
-なお、はんだ付けのために剥いたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
+なお、はんだ付けしたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
 
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
@@ -396,10 +396,12 @@ Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP](../README
 1. スライドスイッチ穴フィラー を ケース(下) に取り付ける  
    ※ BLE Micro Pro を使用する場合は スライドスイッチ となります
 
-1. ケース(下) と ケース(上) を ケース用プッシュリベット(長) で合体する (終)  
+1. ケース(下) と ケース(上) を ケース用プッシュリベット(長) で合体する  
    ※ ケース用プッシュリベット(長) は少し長い6本入りのものです
 
     <img src="./images/assem_state31.jpg" width="480px">
+
+1. ケース(下) 底面のくぼみに ケース用ゴム足 を貼り付ける (終)
 
 
 ### ハードウェア作業の終わり
