@@ -305,7 +305,7 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
 使用する $micon_normal_nn に合わせたコネクタ と USBオスコネクタ をはんだ付けします。
 
 1. $usb_b_con_nn と $jst_wire_nn をはんだ付けする場合
-    1. $usb_b_con_nn の端子に予備はんだを盛る
+    1. $usb_b_con_nn に予備はんだを盛る
 
         <img src="./images/jst_wire_b_state01.jpg" width="320px">
     1. 画像のとおりにはんだ付けする
@@ -314,14 +314,14 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
 
         <img src="./images/jst_wire_b_state21b.jpg" width="320px">
 1. $usb_c_con_nn と $jst_wire_nn をはんだ付けする場合
-    1. $usb_c_con_nn の端子に予備はんだを盛る
+    1. $usb_c_con_nn に予備はんだを盛る
     1. 画像のとおりにはんだ付けする
 
         <img src="./images/jst_wire_c_state11.jpg" width="480px">  
 
         <img src="./images/jst_wire_c_state21.jpg" width="320px">
 
-なお、はんだ付けのために剥いたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
+なお、はんだ付けしたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
 
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
