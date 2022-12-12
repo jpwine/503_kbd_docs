@@ -25,7 +25,7 @@ BMPを使う場合のパーツはキットに付属しませんので、別途�
 | 部品 | 数量 |
 |  :-  |  -:  |
 | [$micon_bmp_nn](https://shop.yushakobo.jp/products/ble-micro-pro) | 1 |
-| [$bmp_battery_nn](https://shop.yushakobo.jp/products/ble-micro-pro-battery-board/) | 1 |
+| [$bmp_battery_nn](https://shop.yushakobo.jp/products/5623) | 1 |
 | コイン電池 CR1632  | 2 |
 
 
