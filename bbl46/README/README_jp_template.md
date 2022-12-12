@@ -7,4 +7,4 @@ ${kbname}について以下を公開します。
 1. パラメータ
 1. 頒布物
 1. [BMP対応](./README_bmp/README_${_lang}.md)
-1. 今後の展望
+1. [今後の課題](./README_tasks/README_${_lang}.md)
