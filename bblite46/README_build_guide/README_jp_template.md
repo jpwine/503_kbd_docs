@@ -63,7 +63,7 @@
 | $spacer1_nn  | 7 | | $usb_b_con_nn  | 1 |
 | $scr_smallf_nn  | 7 | | $usb_c_con_nn  | 1 |
 | $scr_smallb_nn  | 7 | | $reset_sw_nn  | 1 |
-| $spacer2_nn  | 8 |
+| $spacer2_nn  | 8 | | $jst_wire2_nn  | 1 |
 
 ※ 付属品の外観ならびに型番は [パーツリスト](../README_parts/README_${_lang}.md) を参照してください
 

@@ -90,7 +90,7 @@ ASIN: B071KNKNM5
 
 ### ケース用ゴム足
 
-型番: CS-01  
+型番: CS-102  
 ASIN: B00V5MQQ5A
 
 <img src="./images/rubber_foot.jpg" width="320px">
