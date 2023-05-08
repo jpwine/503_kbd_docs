@@ -2,34 +2,6 @@
 
 ## 筐体部品
 
-### $caseu_nn
-
-型番: なし
-
-<img src="./images/caseu.jpg" width="480px">
-
-
-### $cased_nn
-
-型番: なし
-
-<img src="./images/cased.jpg" width="480px">
-
-
-### $ssw1_nn
-
-型番: なし
-
-<img src="./images/ssw1.jpg" width="320px">
-
-
-### $ssw2_nn
-
-型番: なし
-
-<img src="./images/ssw2.jpg" width="320px">
-
-
 ### $ps1_nn
 
 型番: なし
@@ -44,40 +16,28 @@
 <img src="./images/ps2.jpg" width="320px">
 
 
-### $pl1_nn
+### $nut_nn
 
-型番: なし
-
-<img src="./images/pl1.jpg" width="320px">
+型番: FNT-02EB
 
 
-### $pl2_nn
-
-型番: なし
-
-<img src="./images/pl2.jpg" width="320px">
+<img src="./images/nut.jpg" width="320px">
 
 
-### $poronu_nn
+### $scr_nn
 
-型番: L32-1.550MT (2mmx10mmカット)
-
-<img src="./images/poronu.jpg" width="320px">
-
-
-### $porond_nn
-
-型番: L32-1.550MT (3mmx10mmカット)
-
-<img src="./images/porond.jpg" width="320px">
+部品番号: a19111100ux0321jp  
+ASIN: 	B083DQSSNR
 
 
-### $case_rivet_nn
+<img src="./images/scr.jpg" width="320px">
 
-型番: a19032500ux0034jp  
-ASIN: B07S5H8VPS
 
-<img src="./images/case_rivet.jpg" width="320px">
+### $poron_nn
+
+型番: L32-1.550MT (4mmx3mmカット)
+
+<img src="./images/poron.jpg" width="320px">
 
 
 ### $daughter_board_rivet_nn
@@ -96,7 +56,7 @@ ASIN: B00V5MQQ5A
 <img src="./images/rubber_foot.jpg" width="320px">
 
 
-### $spacer_nn + $scr_smallb_nn
+### $spacer1_nn + $scr_smallb_nn
 
 型番: 不明  
 品名: KBDFANS M2-3 COUNTERSUNK FLAT HEAD SCREW KIT
@@ -112,6 +72,14 @@ ASIN: B00V5MQQ5A
 <img src="./images/scr_smallf.jpg" width="320px">
 
 
+### $spacer2_nn
+
+型番: 不明  
+品名: 黄銅スペーサー (六角) M2 5mm
+
+<img src="./images/spacer2.jpg" width="480px">
+
+
 <BR>
 
 ## 電子部品
@@ -123,11 +91,18 @@ ASIN: B00V5MQQ5A
 <img src="./images/pcb.jpg" width="480px">
 
 
-### $plate_nn
+### $plate_sw_nn
 
 型番: なし
 
-<img src="./images/plate.jpg" width="480px">
+<img src="./images/plate_sw.jpg" width="480px">
+
+
+### $plate_btm_nn
+
+型番: なし
+
+<img src="./images/plate_btm.jpg" width="480px">
 
 
 ### $sw_socket_nn
@@ -175,25 +150,20 @@ ASIN: B0B3HSXR9F
 <img src="./images/usb_c_con.jpg" width="320px">
 
 
-### $pin_socket_nn
-
-型番: HSCSW-S13G-H3.5-L5.6
-
-<img src="./images/pin_socket.jpg" width="400px">
-
-
-### $pin_header_nn
-
-型番: 不明  
-商品コード: SSCI-039406
-
-<img src="./images/pin_header.jpg" width="400px">
-
-
 ### $reset_sw_nn
 
 型番: TS-1136-4.3
 
 <img src="./images/reset_sw.jpg" width="320px">
+
+
+### $jst_wire2_nn
+
+※BMP無線使用時の電源ケーブル
+
+型番: 不明  
+ASIN: B07NRR255D
+
+<img src="./images/jst_wire2.jpg" width="480px">
 
 

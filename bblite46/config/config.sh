@@ -46,6 +46,7 @@ declare -x  jst_wire_nn="JST SH型 4ピンコネクタ付きジャンパワイ�
 declare -x  usb_b_con_nn="Micro USB Type-B（2.0）端子"
 declare -x  usb_c_con_nn="USB Type-C端子"
 declare -x  reset_sw_nn="RST用タクタイルスイッチ"
+declare -x  jst_wire2_nn="JST 1.25mm 2ピン ペアコネクタ付きワイヤ"
 
 
 # Non-included parts
