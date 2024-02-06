@@ -77,16 +77,16 @@
 | $ps2_nn   | 4 | | $jst_wire_nn  | 1 |
 | $pl1_nn   | 6 | | $usb_b_con_nn  | 1 |
 | $pl2_nn   | 6 | | $usb_c_con_nn  | 1 |
-| $poronu_nn  | 10 | | $pin_socket_nn  | 2 |
-| $porond_nn  | 20 | | $pin_header_nn  | 2 |
-| $case_rivet_nn  | 6 | | $reset_sw_nn  | 1 |
+| $poronu_nn  | 10 | | $reset_sw_nn  | 1 |
+| $porond_nn  | 20 | 
+| $case_rivet_nn  | 6 |
 | $daughter_board_rivet_nn  | 4 |
 | $rubber_foot_nn | 4 |
 | $spacer_nn  | 5 |
 | $scr_smallf_nn  | 5 |
 | $scr_smallb_nn  | 5 |
 
-※ 付属品の外観ならびに型番は [パーツリスト(未完成)](../README_parts/README_${_lang}.md) を参照してください
+※ 付属品の外観ならびに型番は [パーツリスト](../README_parts/README_${_lang}.md) を参照してください
 
 ### キット外のパーツ
 
@@ -96,6 +96,7 @@
 | 品目 | 数量 |
 |  :-  |  -:  |
 | $micon_normal_nn  | 1 |
+| $konsuru1_nn  | 2 |
 | $switch_nn  | 46 |
 | $keycap_nn  | - |
 | $stabi_nn  | 3 または 2※ |
@@ -143,7 +144,7 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 ### はんだ付け (/5)
 
 大変な作業から順に並べています。
-2つ目が終わるとほぼ終わっています。  
+2つ目まで終わると大変な作業はほぼ終わっています。  
 <!--作者向けに作業を配信してくださると、作者が作業動画としてありがたがり、新作が進捗します。-->
 
 #### $diode_nn のはんだ付け (1/5)
@@ -213,76 +214,9 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
     1. $sw_socket_nn の未接合の足をはんだ付けする
     1. $sw_socket_nn が基板から浮いていないことを確認する
 
-#### $pin_socket_nn と $pin_header_nn のはんだ付け (3/5)
-
-1. 下準備
-    1. $pin_socket_nn を $pcb_nn にのせる x2  
-       ※ $pin_socket_nn をのせる面は ダイオード と同じです
-
-       <img src="./images/handa_pin_header_state01.jpg" width="320px"><img src="./images/handa_pin_header_state02.jpg" width="320px">
-    1. $pin_header_nn を1pin分カットし、12pinにする x2  
-       ※ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合はカットせずに 13pin のままはんだ付けしてください
-
-       <img src="./images/handa_pin_header_state03.jpg" width="320px">
-    1. $pin_header_nn を $pin_socket_nn に差し込む x2  
-       ※ 画像は隙間がありますが、次の $micon_normal_nn をのせたあとにぎゅっと押して隙間をなくします  
-       ※ $micon_normal_nn の場合、さきほど 1pin 切り取ったとおり $pin_socket_nn と $pin_header_nn の数が一致していない状態が正常となります
-
-       <img src="./images/handa_pin_header_state04.jpg" width="320px">
-    1. $micon_normal_nn を $pin_header_nn にのせる
-
-       <img src="./images/handa_pin_header_state05.jpg" width="320px">
-    1. マスキングテープで上記を固定する
-
-       <img src="./images/handa_pin_header_state06.jpg" width="320px">
-
-1. 1本目の $pin_socket_nn を $pcb_nn にはんだ付けする
-    1. $pin_socket_nn の端の1pinをはんだ付けする
-
-       <img src="./images/handa_pin_header_state11.jpg" width="320px">
-    1. $pin_socket_nn が $pcb_nn から浮いていないことを確認する
-    1. $pin_socket_nn の反対端の1pinをはんだ付けする
-
-       <img src="./images/handa_pin_header_state12.jpg" width="320px">
-    1. $pin_socket_nn が $pcb_nn から浮いていないことを確認する
-    1. $pin_socket_nn の残りのpinをはんだ付けする
-
-1. 2本目の $pin_socket_nn を $pcb_nn にはんだ付けする
-    1. $pin_socket_nn の端の1pinをはんだ付けする
-    1. $pin_socket_nn が基板から浮いていないことを確認する
-    1. $pin_socket_nn の反対端の1pinをはんだ付けする
-    1. $pin_socket_nn が基板から浮いていないことを確認する
-    1. $pin_socket_nn の残りのpinをはんだ付けする
-
-   ※ここまでマスキングテープを剥がす必要はないはずです
-
-1. 1本目の $pin_header_nn を $micon_normal_nn にはんだ付けする
-    1. $pin_header_nn の端の1pinをはんだ付けする
-    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
-    1. $pin_header_nn の反対端の1pinをはんだ付けする
-    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
-
-1. 2本目の $pin_header_nn を $micon_normal_nn にはんだ付けする
-    1. $pin_header_nn の端の1pinをはんだ付けする
-    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
-    1. $pin_header_nn の反対端の1pinをはんだ付けする
-    1. $pin_header_nn が $micon_normal_nn から浮いていないことを確認する
-
-1. マスキングテープを剥がす
-
-1. 2本の $pin_header_nn を $micon_normal_nn にはんだ付けする
-    1. $pin_header_nn の残りのpinをはんだ付けする
-
-1. 2本の $pin_socket_nn の $pcb_nn から余分に伸びている足をカットする
-
-    <img src="./images/handa_pin_header_state21.jpg" width="320px">
- 1. 2本の $pin_header_nn の $micon_normal_nn から余分に伸びている足をカットする
-
-    <img src="./images/handa_pin_header_state22.jpg" width="320px">
 
 
-
-#### $reset_sw_nn のはんだ付け (4/5)
+#### $reset_sw_nn のはんだ付け (3/5)
 
 1. $reset_sw_nn を $pcb_nn にはんだ付けする
     1. $reset_sw_nn を $pcb_nn に取り付ける  
@@ -293,7 +227,7 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
     1. $reset_sw_nn をはんだ付けする
 
 
-#### ワイヤー のはんだ付け (5/5)
+#### ワイヤー のはんだ付け (4/5)
 
 (キーボードの利用シーンを仮にPCとしています)  
 PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn をUSBケーブルで直接接続するわけではありません。  
@@ -322,6 +256,36 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
         <img src="./images/jst_wire_c_state21.jpg" width="320px">
 
 なお、はんだ付けしたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
+
+
+#### $konsuru1_nn と $micon_normal_nn のはんだ付け (5/5)
+
+1. 説明
+    * $konsuru1_nn は ピンヘッダ/ピンソケットを使う場合より マイコンボード を PCBから抜き差ししやすくするパーツですが、$konsuru1_nn と $micon_normal_nn をはんだ付けする必要があります
+
+    * $konsuru1_nn と $micon_normal_nn の接続は、下図のようになります
+
+       <img src="./images/konsuru_micon_window.png" width="480px">
+    * $micon_normal_nn と $pcb_nn の接続は、下図のように VCC / RST / GND と $micon_normal_nn の VCC / RST / GND を一致させます
+
+       <img src="./images/konsuru_micon_front.jpg" width="480px">
+    * BMPを使う場合はコンスルーのはんだ付け不要です  
+      ※ほかのキーボードで使うかもしれない方ははんだ付けしないで使い始めてみて、必要に応じてはんだ付けしてください
+1. 1本目の $konsuru1_nn を $micon_normal_nn にはんだ付けする
+    1. $konsuru1_nn の端の1pinをはんだ付けする
+    1. $konsuru1_nn が $micon_normal_nn から浮いていないことを確認する
+    1. $konsuru1_nn の反対端の1pinをはんだ付けする
+    1. $konsuru1_nn が $micon_normal_nn から浮いていないことを確認する
+    1. $konsuru1_nn の残りのpinをはんだ付けする
+
+1. 2本目の $konsuru1_nn を $micon_normal_nn にはんだ付けする
+    1. $konsuru1_nn の端の1pinをはんだ付けする
+    1. $konsuru1_nn が $micon_normal_nn から浮いていないことを確認する
+    1. $konsuru1_nn の反対端の1pinをはんだ付けする
+    1. $konsuru1_nn が $micon_normal_nn から浮いていないことを確認する
+    1. $konsuru1_nn の残りのpinをはんだ付けする
+
+
 
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
@@ -425,7 +389,8 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP](..
 1. ケースに $micon_normal_nn を納めている場合は取り出し、 $jst_wire_nn を外す
 1. $pcb_nn に $micon_normal_nn を取り付けたまま USBケーブル でPCに接続する
 1. Remapにて、ファームウェアファイルを $micon_normal_nn に書き込む
-    1. [こちら](https://remap-keys.app/catalog/3rpQkcurHny6IPkoYaSW/firmware)に Google Chrome でアクセスるす
+    1. [こちら](https://remap-keys.app/catalog/3rpQkcurHny6IPkoYaSW/firmware)に Google Chrome でアクセスする
+        * 2024.02.04時点では *bbl46 v0.22* を書き込みます
     1. [FLASH] を押下する
 
         <img src="./images/flash_state01.png" width="480px">

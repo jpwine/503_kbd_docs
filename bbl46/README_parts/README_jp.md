@@ -175,14 +175,14 @@ ASIN: B0B3HSXR9F
 <img src="./images/usb_c_con.jpg" width="320px">
 
 
-### 13pinピンソケット
+### 
 
 型番: HSCSW-S13G-H3.5-L5.6
 
 <img src="./images/pin_socket.jpg" width="400px">
 
 
-### 13pinピンヘッダー
+### 
 
 型番: 不明  
 商品コード: SSCI-039406

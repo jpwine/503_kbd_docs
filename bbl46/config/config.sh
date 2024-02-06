@@ -46,14 +46,13 @@ declare -x  daughter_board_nn="ドーターボード"
 declare -x  jst_wire_nn="JST SH型 4ピンコネクタ付きジャンパワイヤ"
 declare -x  usb_b_con_nn="Micro USB Type-B（2.0）端子"
 declare -x  usb_c_con_nn="USB Type-C端子"
-declare -x  pin_socket_nn="13pinピンソケット"
-declare -x  pin_header_nn="13pinピンヘッダー"
 declare -x  reset_sw_nn="RST用タクタイルスイッチ"
 
 
 # Non-included parts
 
 declare -x  micon_normal_nn="Pro Micro"
+declare -x  konsuru1_nn="12Pinコンスルー"
 declare -x  switch_nn="MX互換スイッチ"
 declare -x  keycap_nn="キーキャップ"
 declare -x  stabi_nn="2U スタビライザー"
@@ -62,6 +61,7 @@ declare -x  stabi_nn="2U スタビライザー"
 # BMP
 
 declare -x  micon_bmp_nn="BLE Micro Pro"
+declare -x  konsuru2_nn="13Pinコンスルー"
 declare -x  bmp_battery_nn="電池部品セット"
 declare -x  bmp_part01_nn="ショットキーバリアダイオード"
 declare -x  bmp_part02_nn="コンデンサ"

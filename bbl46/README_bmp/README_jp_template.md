@@ -25,6 +25,7 @@ BMPを使う場合のパーツはキットに付属しませんので、別途�
 | 部品 | 数量 |
 |  :-  |  -:  |
 | [$micon_bmp_nn](https://shop.yushakobo.jp/products/ble-micro-pro) | 1 |
+| $konsuru2_nn  | 2 |
 | [$bmp_battery_nn](https://shop.yushakobo.jp/products/5623) | 1 |
 | コイン電池 CR1632  | 2 |
 
@@ -107,25 +108,55 @@ $bmp_part04_nn の電源ON は奥側となります
 
 ### $micon_bmp_nn のファームウェア書き込み
 
+BMPを $kbname のマイコンとして利用可能な状態とするために、大きくわけて以下の作業が必要です。
+
+1. BMP をアップデートする
+1. BMP に $kbname 専用コンフィグを投入する
+1. BMP 有線接続時のマスストレージを無効化する
+
+はじめに、BMP をアップデートします。
 
 1. $pcb_nn に $micon_bmp_nn を取り付けたまま USBケーブル でPCに接続する
-1. BLE Micro Pro Web Configurator にて、ブートローダーをアップデートする
+1. BLE Micro Pro Web Configurator にて、BMPをアップデートする
     1. [こちら](https://sekigon-gonnoc.github.io/BLE-Micro-Pro-WebConfigurator/) に Google Chromeでアクセスする
-    1. [ブートローダーをアップデートする]を押下する
-    1. [ble_micro_pro_bootloader_(最新Ver.)]を選択し[Update]を実行する
-1. BLE Micro Pro Web Configurator にて、アプリケーションをアップデートする
+    1. ブートローダーのアップデート
+        1. [ブートローダーをアップデートする]を押下する
+        1. *Disable Mass Storage Class* のチェックを外したまま、BMP 有線接続時のマスストレージを有効化しておく
+        1. [ble_micro_pro_bootloader_(最新Ver.)]を選択し[Update]を実行する
+    1. Homeに戻る、または、[こちら](https://sekigon-gonnoc.github.io/BLE-Micro-Pro-WebConfigurator/) にアクセスする
+    1. アプリケーションのアップデート
+        1. [アプリケーションをアップデートする]を押下する
+        1. *Disable Mass Storage Class* のチェックを外したまま、BMP 有線接続時のマスストレージを有効化しておく
+        1. [ble_micro_pro_vial_(最新Ver.)]を選択し[Update]を実行する
+
+* 諸注意
+    * Macで作業していると頻繁に「取り外し云々」が出てきますが、問題ありません
+    * 動作確認できているバージョンの組み合わせは以下となります
+        * bootloader: 1_1_1 / application: 1_1_2
+
+つぎに、BMP に $kbname 専用コンフィグを投入します。
+
+1. config.binを書き込む
+    1. お好みの方法でBMPのマスストレージに以下のコンフィグファイルを投入します
+        * [コンフィグファイル](resources/jpwine_bbl46_single_config.bin)
+    1. BMPを有線で再接続する
+        * 再接続すると、マスストレージの接続が $kbname に変わっているはずです
+
+最後に、BMP 有線接続時のマスストレージを無効化します。  
+無効化せずともこのまま使用可能ですが (特にMacで)有線の抜去時に警告が出て煩わしいため以下を実施します。
+
+1. $pcb_nn に $micon_bmp_nn を取り付けたまま USBケーブル でPCに接続する
+1. BLE Micro Pro Web Configurator にて、BMPをアップデートする
     1. [こちら](https://sekigon-gonnoc.github.io/BLE-Micro-Pro-WebConfigurator/) に Google Chromeでアクセスする
-    1. [アプリケーションをアップデートする]を押下する
-    1. [ble_micro_pro_default_(最新Ver.)]を選択し[Update]を実行する
-1. BMP Configurator にて、configを書き込む
-    1. [こちら](https://sekigon-gonnoc.github.io/qmk_configurator/#/)に Google Chrome でアクセスする
-    1. [CONNECT BY SERIAL]を押下し、BMP Configurator と $micon_bmp_nn を接続する
-    1. [CONFIG/TAPTERM]を押下し、[こちらの添付ファイル](resources/bmp_config.json)を渡す  
-       ※ すると、ログに「app: Write succeed」と表示されます  
-       ※ このとき $micon_bmp_nn はデバイス情報が書き込まれ、BMP Configuratorから切断されています
+    1. アプリケーションのアップデート
+        1. [アプリケーションをアップデートする]を押下する
+        1. *Disable Mass Storage Class* をチェックし、BMP 有線接続時のマスストレージを無効化する
+        1. [ble_micro_pro_vial_(先の手順と同じver)]を選択し[Update]を実行する
 
-不格好なキーマップがBMP Configuratorに表示されているものと思いますが、正常です。  
-$kbname として文字入力する準備が整っています。
 
-キーマップ設定作業を 元の手順書に戻り再開してください。  
-USB接続でも、BT接続でも、remapを利用してキーマップを書き込み可能となっています。
+以上で $kbname として文字入力する準備が整っています。  
+デフォルトキーマップにキー割当がほとんどないので、元の手順に戻ってキーマップの書き込みに進んでください。
+
+* USB接続時は remap または vial でキーマップの書き換え可能
+* BT接続時は remap でキーマップの書き換え可能
+    * BT接続時の vial は試した限りでは書き換え不可でした

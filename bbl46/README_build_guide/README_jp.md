@@ -55,8 +55,8 @@
     * JST SH型 4ピンコネクタ付きジャンパワイヤ  [x 1]
     * Micro USB Type-B（2.0）端子  [x 1]
     * USB Type-C端子  [x 1]
-    * 13pinピンソケット  [x 2]
-    * 13pinピンヘッダー  [x 2]
+    *   [x 2]
+    *   [x 2]
     * スペーサー (3.5mm)  [x 5]
     * 低頭精密小ねじ (M2/3mm)  [x 5]
     * 小ねじ (M2)  [x 5]
@@ -77,16 +77,16 @@
 | 支柱(短-肉抜)   | 4 | | JST SH型 4ピンコネクタ付きジャンパワイヤ  | 1 |
 | 支柱(長-肉有)   | 6 | | Micro USB Type-B（2.0）端子  | 1 |
 | 支柱(長-肉抜)   | 6 | | USB Type-C端子  | 1 |
-| ケース(上)用ポロンシート(2mm)  | 10 | | 13pinピンソケット  | 2 |
-| 支柱用ポロンシート(3mm)  | 20 | | 13pinピンヘッダー  | 2 |
-| ケース用プッシュリベット(長)  | 6 | | RST用タクタイルスイッチ  | 1 |
+| ケース(上)用ポロンシート(2mm)  | 10 | | RST用タクタイルスイッチ  | 1 |
+| 支柱用ポロンシート(3mm)  | 20 | 
+| ケース用プッシュリベット(長)  | 6 |
 | ドーターボード用プッシュリベット(短)  | 4 |
 | ケース用ゴム足 | 4 |
 | スペーサー (3.5mm)  | 5 |
 | 低頭精密小ねじ (M2/3mm)  | 5 |
 | 小ねじ (M2)  | 5 |
 
-※ 付属品の外観ならびに型番は [パーツリスト(未完成)](../README_parts/README_jp.md) を参照してください
+※ 付属品の外観ならびに型番は [パーツリスト](../README_parts/README_jp.md) を参照してください
 
 ### キット外のパーツ
 
@@ -96,6 +96,7 @@
 | 品目 | 数量 |
 |  :-  |  -:  |
 | Pro Micro  | 1 |
+| 12Pinコンスルー  | 2 |
 | MX互換スイッチ  | 46 |
 | キーキャップ  | - |
 | 2U スタビライザー  | 3 または 2※ |
@@ -143,7 +144,7 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
 ### はんだ付け (/5)
 
 大変な作業から順に並べています。
-2つ目が終わるとほぼ終わっています。  
+2つ目まで終わると大変な作業はほぼ終わっています。  
 <!--作者向けに作業を配信してくださると、作者が作業動画としてありがたがり、新作が進捗します。-->
 
 #### ダイオード (SMDタイプ) のはんだ付け (1/5)
@@ -213,76 +214,9 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
     1. MX互換スイッチソケット の未接合の足をはんだ付けする
     1. MX互換スイッチソケット が基板から浮いていないことを確認する
 
-#### 13pinピンソケット と 13pinピンヘッダー のはんだ付け (3/5)
-
-1. 下準備
-    1. 13pinピンソケット を PCB にのせる x2  
-       ※ 13pinピンソケット をのせる面は ダイオード と同じです
-
-       <img src="./images/handa_pin_header_state01.jpg" width="320px"><img src="./images/handa_pin_header_state02.jpg" width="320px">
-    1. 13pinピンヘッダー を1pin分カットし、12pinにする x2  
-       ※ Pro Micro の代わりに BLE Micro Pro を使用する場合はカットせずに 13pin のままはんだ付けしてください
-
-       <img src="./images/handa_pin_header_state03.jpg" width="320px">
-    1. 13pinピンヘッダー を 13pinピンソケット に差し込む x2  
-       ※ 画像は隙間がありますが、次の Pro Micro をのせたあとにぎゅっと押して隙間をなくします  
-       ※ Pro Micro の場合、さきほど 1pin 切り取ったとおり 13pinピンソケット と 13pinピンヘッダー の数が一致していない状態が正常となります
-
-       <img src="./images/handa_pin_header_state04.jpg" width="320px">
-    1. Pro Micro を 13pinピンヘッダー にのせる
-
-       <img src="./images/handa_pin_header_state05.jpg" width="320px">
-    1. マスキングテープで上記を固定する
-
-       <img src="./images/handa_pin_header_state06.jpg" width="320px">
-
-1. 1本目の 13pinピンソケット を PCB にはんだ付けする
-    1. 13pinピンソケット の端の1pinをはんだ付けする
-
-       <img src="./images/handa_pin_header_state11.jpg" width="320px">
-    1. 13pinピンソケット が PCB から浮いていないことを確認する
-    1. 13pinピンソケット の反対端の1pinをはんだ付けする
-
-       <img src="./images/handa_pin_header_state12.jpg" width="320px">
-    1. 13pinピンソケット が PCB から浮いていないことを確認する
-    1. 13pinピンソケット の残りのpinをはんだ付けする
-
-1. 2本目の 13pinピンソケット を PCB にはんだ付けする
-    1. 13pinピンソケット の端の1pinをはんだ付けする
-    1. 13pinピンソケット が基板から浮いていないことを確認する
-    1. 13pinピンソケット の反対端の1pinをはんだ付けする
-    1. 13pinピンソケット が基板から浮いていないことを確認する
-    1. 13pinピンソケット の残りのpinをはんだ付けする
-
-   ※ここまでマスキングテープを剥がす必要はないはずです
-
-1. 1本目の 13pinピンヘッダー を Pro Micro にはんだ付けする
-    1. 13pinピンヘッダー の端の1pinをはんだ付けする
-    1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
-    1. 13pinピンヘッダー の反対端の1pinをはんだ付けする
-    1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
-
-1. 2本目の 13pinピンヘッダー を Pro Micro にはんだ付けする
-    1. 13pinピンヘッダー の端の1pinをはんだ付けする
-    1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
-    1. 13pinピンヘッダー の反対端の1pinをはんだ付けする
-    1. 13pinピンヘッダー が Pro Micro から浮いていないことを確認する
-
-1. マスキングテープを剥がす
-
-1. 2本の 13pinピンヘッダー を Pro Micro にはんだ付けする
-    1. 13pinピンヘッダー の残りのpinをはんだ付けする
-
-1. 2本の 13pinピンソケット の PCB から余分に伸びている足をカットする
-
-    <img src="./images/handa_pin_header_state21.jpg" width="320px">
- 1. 2本の 13pinピンヘッダー の Pro Micro から余分に伸びている足をカットする
-
-    <img src="./images/handa_pin_header_state22.jpg" width="320px">
 
 
-
-#### RST用タクタイルスイッチ のはんだ付け (4/5)
+#### RST用タクタイルスイッチ のはんだ付け (3/5)
 
 1. RST用タクタイルスイッチ を PCB にはんだ付けする
     1. RST用タクタイルスイッチ を PCB に取り付ける  
@@ -293,7 +227,7 @@ Pro Micro は USBケーブルの抜き差し中にマイコンボード側のコ
     1. RST用タクタイルスイッチ をはんだ付けする
 
 
-#### ワイヤー のはんだ付け (5/5)
+#### ワイヤー のはんだ付け (4/5)
 
 (キーボードの利用シーンを仮にPCとしています)  
 PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSBケーブルで直接接続するわけではありません。  
@@ -322,6 +256,36 @@ PCとキーボードの接続にて、PC と キーボードの Pro Micro をUSB
         <img src="./images/jst_wire_c_state21.jpg" width="320px">
 
 なお、はんだ付けしたワイヤーの芯線同士が接触しないように エポキシ接着剤 などで固定しておくとよいです。
+
+
+#### 12Pinコンスルー と Pro Micro のはんだ付け (5/5)
+
+1. 説明
+    * 12Pinコンスルー は ピンヘッダ/ピンソケットを使う場合より マイコンボード を PCBから抜き差ししやすくするパーツですが、12Pinコンスルー と Pro Micro をはんだ付けする必要があります
+
+    * 12Pinコンスルー と Pro Micro の接続は、下図のようになります
+
+       <img src="./images/konsuru_micon_window.png" width="480px">
+    * Pro Micro と PCB の接続は、下図のように VCC / RST / GND と Pro Micro の VCC / RST / GND を一致させます
+
+       <img src="./images/konsuru_micon_front.jpg" width="480px">
+    * BMPを使う場合はコンスルーのはんだ付け不要です  
+      ※ほかのキーボードで使うかもしれない方ははんだ付けしないで使い始めてみて、必要に応じてはんだ付けしてください
+1. 1本目の 12Pinコンスルー を Pro Micro にはんだ付けする
+    1. 12Pinコンスルー の端の1pinをはんだ付けする
+    1. 12Pinコンスルー が Pro Micro から浮いていないことを確認する
+    1. 12Pinコンスルー の反対端の1pinをはんだ付けする
+    1. 12Pinコンスルー が Pro Micro から浮いていないことを確認する
+    1. 12Pinコンスルー の残りのpinをはんだ付けする
+
+1. 2本目の 12Pinコンスルー を Pro Micro にはんだ付けする
+    1. 12Pinコンスルー の端の1pinをはんだ付けする
+    1. 12Pinコンスルー が Pro Micro から浮いていないことを確認する
+    1. 12Pinコンスルー の反対端の1pinをはんだ付けする
+    1. 12Pinコンスルー が Pro Micro から浮いていないことを確認する
+    1. 12Pinコンスルー の残りのpinをはんだ付けする
+
+
 
 
 #### 番外：BMP用電源パーツ のはんだ付け (別資料)
@@ -425,7 +389,8 @@ Pro Micro の代わりに BLE Micro Pro を使用する場合は [BMP](../README
 1. ケースに Pro Micro を納めている場合は取り出し、 JST SH型 4ピンコネクタ付きジャンパワイヤ を外す
 1. PCB に Pro Micro を取り付けたまま USBケーブル でPCに接続する
 1. Remapにて、ファームウェアファイルを Pro Micro に書き込む
-    1. [こちら](https://remap-keys.app/catalog/3rpQkcurHny6IPkoYaSW/firmware)に Google Chrome でアクセスるす
+    1. [こちら](https://remap-keys.app/catalog/3rpQkcurHny6IPkoYaSW/firmware)に Google Chrome でアクセスする
+        * 2024.02.04時点では *bbl46 v0.22* を書き込みます
     1. [FLASH] を押下する
 
         <img src="./images/flash_state01.png" width="480px">
