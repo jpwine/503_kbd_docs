@@ -42,7 +42,7 @@
 ### 使用上の注意・FAQ
 
 * 本キットは自作キーボードについての適切な知識をお持ちの方を対象としています
-* 乱暴に扱うと支柱が壊れる恐れがあります (壊れたら替えを送ります)
+* 乱暴に扱うと支柱が壊れる恐れがあります (補修パーツも用意しています)
 
 ### キット付属パーツ
 
@@ -125,7 +125,7 @@ $micon_normal_nn は USBケーブルの抜き差し中にマイコンボード�
 ### はんだ付け (全5工程)
 
 大変な作業から順に並べています。
-2つ目が終わるとほぼ終わっています。  
+2つ目まで終わると大変な作業はほぼ終わっています。
 
 #### $diode_nn のはんだ付け (1/5)
 
@@ -242,6 +242,8 @@ PCとキーボードの接続にて、PC と キーボードの $micon_normal_nn
     1. $micon_normal_nn と $pcb_nn の接続は、下図のように VCC / RST / GND と $micon_normal_nn の VCC / RST / GND を一致させます
 
        <img src="./images/konsuru_micon_front.jpg" width="480px">
+    * BMPを使う場合はコンスルーのはんだ付け不要です  
+      ※ほかのキーボードで使うかもしれない方ははんだ付けしないで使い始めてみて、必要に応じてはんだ付けしてください
 1. 1本目の $konsuru1_nn を $micon_normal_nn にはんだ付けする
     1. $konsuru1_nn の端の1pinをはんだ付けする
     1. $konsuru1_nn が $micon_normal_nn から浮いていないことを確認する
@@ -368,6 +370,7 @@ $micon_normal_nn の代わりに $micon_bmp_nn を使用する場合は [BMP](..
 1. USBケーブル でPCに接続する
 1. Remapにて、ファームウェアファイルを $micon_normal_nn に書き込む
     1. [こちら](https://remap-keys.app/catalog/3rpQkcurHny6IPkoYaSW/firmware)に Google Chrome でアクセスする
+        * 2024.02.04時点では *bblite46 v0.22* を書き込みます
     1. [FLASH] を押下する
 
         <img src="./images/flash_state01.png" width="480px">
